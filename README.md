@@ -25,7 +25,7 @@ Raining Cats and Dogs is created to help pet owners find temporarily places for 
 
 ## Application Deployment
 
-This application is a live site, deployed using Heroku at https://raining-cats-dogs.herokuapp.com/ 
+This application is a live site, deployed using Heroku at https://raining-dogs.herokuapp.com/ 
 
 
 ## Documentation Screenshot
