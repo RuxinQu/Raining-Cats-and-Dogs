@@ -29,22 +29,10 @@ Hotel.init(
             type: DataTypes.BOOLEAN,
             allowNull: false,
         },
-        filename: {
+        hotelImg: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        cat: {
-            type: DataTypes.BOOLEAN,
-        },
-        dog: {
-            type: DataTypes.BOOLEAN,
-        },
-        rabbit: {
-            type: DataTypes.BOOLEAN,
-        },
-        other: {
-            type: DataTypes.BOOLEAN,
-        },
+        }
     },
     {
         sequelize,
