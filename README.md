@@ -25,7 +25,7 @@ Raining Cats and Dogs is created to help pet owners find temporarily places for 
 
 ## Application Deployment
 
-This application is a live site, deployed using Heroku at https://raining-dogs.herokuapp.com/ 
+This application is a live site, deployed using Heroku at https://raining-dog.herokuapp.com/ 
 
 
 ## Documentation Screenshot
@@ -51,6 +51,8 @@ This application is a live site, deployed using Heroku at https://raining-dogs.h
 - [Mysql2](https://www.npmjs.com/package/mysql2)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Heroku](https://www.heroku.com)
+- [Multer](https://www.npmjs.com/package/multer)
+- [Google-Cloud-Storage](https://console.cloud.google.com/storage)
 - [Mocha](https://mochajs.org/)
 - [Chai](https://www.chaijs.com/)
 - [Supertest](https://www.npmjs.com/package/supertest)
