@@ -15,12 +15,7 @@ const storage = new Storage({
     }
 });
 
-const multer = Multer({
-    storage: Multer.memoryStorage(),
-    limits: {
-        fileSize: 5 * 1024 * 1024
-    }
-});
+const multer = Multer({ storage: Multer.memoryStorage() });
 
 const bucket = storage.bucket(process.env.GCS_BUCKET);
 
