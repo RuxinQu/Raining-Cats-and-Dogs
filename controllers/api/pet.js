@@ -15,12 +15,7 @@ const storage = new Storage({
     }
 });
 
-const multer = Multer({
-    storage: Multer.memoryStorage(),
-    limits: {
-        fileSize: 5 * 1024 * 1024
-    }
-});
+const multer = Multer({ storage: Multer.memoryStorage() });
 
 const bucket = storage.bucket(process.env.GCS_BUCKET);
 
@@ -33,24 +28,29 @@ router.get('/', withAuth, (req, res) => {
 router.post('/', withAuth, multer.single('petImg'), async (req, res) => {
     const { name, type, breed } = req.body;
     const owner_id = req.user.id;
-    const fileName = generateUniqueId() + '-' + req.file.originalname;
-    const blob = bucket.file(fileName);
-    const blobStream = blob.createWriteStream();
+    if (req.file) {
+        const fileName = generateUniqueId() + '-' + req.file.originalname;
+        const blob = bucket.file(fileName);
+        const blobStream = blob.createWriteStream();
 
-    // error handler
-    blobStream.on('error', (err) => {
-        res.status(500).send({ message: err.message });
-    });
+        // error handler
+        blobStream.on('error', (err) => {
+            res.status(500).send({ message: err.message });
+        });
 
-    // once it's finished, grab the url and save it to the database
-    blobStream.on('finish', () => {
-        const petImg = `https://storage.googleapis.com/${process.env.GCS_BUCKET}/${blob.name}`;
+        // once it's finished, grab the url and save it to the database
+        blobStream.on('finish', () => {
+            const petImg = `https://storage.googleapis.com/${process.env.GCS_BUCKET}/${blob.name}`;
+            Pet.create({
+                name, type, breed, petImg, owner_id
+            }).then(() => { res.redirect('/dashboard'); });
+        });
+        blobStream.end(req.file.buffer);
+    } else {
         Pet.create({
-            name, type, breed, petImg, owner_id
+            name, type, breed, owner_id
         }).then(() => { res.redirect('/dashboard'); });
-    });
-
-    blobStream.end(req.file.buffer);
+    }
 });
 
 //pick up a pet from the hotel
