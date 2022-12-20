@@ -17,7 +17,9 @@
                 <a class="d-inline-block" href="/api/pet/pickup/{{this.id}}">pick up my pet</a>
                 {{/if}}
             </div>
+            {{#if this.petImg}}
             <img class="pet-img" src={{this.petImg}} alt='pet-img'>
+            {{/if}}
         </div>
     </div>
     {{/each}}
