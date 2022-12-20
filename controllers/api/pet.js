@@ -31,6 +31,7 @@ router.get('/', withAuth, (req, res) => {
 
 //add a new pet and upload the picture to google cloud storage bucket
 router.post('/', withAuth, multer.single('petImg'), async (req, res) => {
+    let petImg;
     const { name, type, breed } = req.body;
     const owner_id = req.user.id;
     const fileName = generateUniqueId() + '-' + req.file.originalname;
@@ -44,7 +45,7 @@ router.post('/', withAuth, multer.single('petImg'), async (req, res) => {
 
     // once it's finished, grab the url and save it to the database
     blobStream.on('finish', () => {
-        const petImg = `https://storage.googleapis.com/${process.env.GCS_BUCKET}/${blob.name}`;
+        petImg = `https://storage.googleapis.com/${process.env.GCS_BUCKET}/${blob.name}`;
         Pet.create({
             name, type, breed, petImg, owner_id
         }).then(() => { res.redirect('/dashboard'); });
