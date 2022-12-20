@@ -1,39 +1,27 @@
 [
     {
-      "name": "Seattle Pet Club",
-      "address": "1234 12 Ave Seattle, WA",
-      "description": "Seattle Pet Club has one of the largest outdoor play areas in Seattle.",
-      "contact_info": "206-555-1234",
-      "vacancy": false,
-      "filename": "cats.3.png",
-      "cat": true,
-      "dog": true,
-      "rabbit": true,
-      "other": true
+        "name": "Seattle Pet Club",
+        "address": "1234 12 Ave Seattle, WA",
+        "description": "Seattle Pet Club has one of the largest outdoor play areas in Seattle.",
+        "contact_info": "206-555-1234",
+        "vacancy": false,
+        "hotelImg": "cats.3.png"
     },
     {
-      "name": "Rain City Pet Resort",
-      "address": "1234 22nd Ave South Seattle, WA",
-      "description": "Rain City Pet Resort Offers Free-Range Daycare, Cage-Free Boarding Options and Some of the Largest Private Outdoor Playgrounds in Seattle.",
-      "contact_info": "206-555-1235",
-      "vacancy": true,
-      "filename": "cats.4.png",
-      "cat": true,
-      "dog": true,
-      "rabbit": false,
-      "other": true
+        "name": "Rain City Pet Resort",
+        "address": "1234 22nd Ave South Seattle, WA",
+        "description": "Rain City Pet Resort Offers Free-Range Daycare, Cage-Free Boarding Options and Some of the Largest Private Outdoor Playgrounds in Seattle.",
+        "contact_info": "206-555-1235",
+        "vacancy": true,
+        "hotelImg": "cats.4.png"
     },
     {
-      "name": "Pet Sitting Hotel",
-      "address": "124 SW Alaska St Seattle, WA",
-      "description": "Pet Sitting Hotel of Seattle is Conveniently Located On Your Way To And From Seatac Airport.",
-      "contact_info": "206-555-1236",
-      "vacancy": true,
-      "filename": "dogs.1.png",
-      "cat": true,
-      "dog": true,
-      "rabbit": true,
-      "other": true
+        "name": "Pet Sitting Hotel",
+        "address": "124 SW Alaska St Seattle, WA",
+        "description": "Pet Sitting Hotel of Seattle is Conveniently Located On Your Way To And From Seatac Airport.",
+        "contact_info": "206-555-1236",
+        "vacancy": true,
+        "hotelImg": "dogs.1.png"
     },
     {
         "name": "Magnolia Pet Care",
@@ -41,11 +29,7 @@
         "description": "Offering some of the most affordable rates in Seattle on Dog Boarding, Daycare, Transportation, and Grooming Services",
         "contact_info": "206-555-1237",
         "vacancy": false,
-        "filename": "dogs.2.png",
-        "cat": true,
-        "dog": true,
-        "rabbit": false,
-        "other": true
+        "hotelImg": "dogs.2.png"
     },
     {
         "name": "Ballard Cat Club",
@@ -53,11 +37,7 @@
         "description": "Very Spacious Kitty Suites, Loving human companionship; various sleeping areas.",
         "contact_info": "206-555-1238",
         "vacancy": false,
-        "filename": "cats.5.png",
-        "cat": true,
-        "dog": false,
-        "rabbit": false,
-        "other": false
+        "hotelImg": "cats.5.png"
     },
     {
         "name": "Petapalooza",
@@ -65,11 +45,7 @@
         "description": "No longer do your cherished friends need to be home alone all day - lonely, bored, crossing their legs or perhaps getting into a bit of mischief.",
         "contact_info": "206-555-1239",
         "vacancy": true,
-        "filename": "dogs.4.png",
-        "cat": true,
-        "dog": true,
-        "rabbit": true,
-        "other": true
+        "hotelImg": "dogs.4.png"
     },
     {
         "name": "Petlandia",
@@ -77,11 +53,7 @@
         "description": "We offer a variety of services to address the particular needs of your situation.",
         "contact_info": "206-555-1231",
         "vacancy": true,
-        "filename": "dogs.5.png",
-        "cat": true,
-        "dog": true,
-        "rabbit": false,
-        "other": false
+        "hotelImg": "dogs.5.png"
     },
     {
         "name": "Queen Anne Pet Spot",
@@ -89,11 +61,7 @@
         "description": "Want to pamper your pet with some extras? We offer neighborhood walks, extra special treats, and more!",
         "contact_info": "206-555-1232",
         "vacancy": false,
-        "filename": "dogs.6.png",
-        "cat": true,
-        "dog": true,
-        "rabbit": false,
-        "other": true
+        "hotelImg": "dogs.6.png"
     },
     {
         "name": "Seattle Canine Club",
@@ -101,11 +69,7 @@
         "description": "Seattle Canine Club is a dog daycare and boarding facility in West Seattle for small- to medium-sized dogs.",
         "contact_info": "206-555-1233",
         "vacancy": false,
-        "filename": "dogs.7.png",
-        "cat": false,
-        "dog": true,
-        "rabbit": false,
-        "other": false
+        "hotelImg": "dogs.7.png"
     },
     {
         "name": "Emerald Pet Care",
@@ -113,11 +77,7 @@
         "description": "Billed at low hourly rates or per visit with available extended vacation discount.",
         "contact_info": "206-555-1239",
         "vacancy": true,
-        "filename": "dogs.3.png",
-        "cat": true,
-        "dog": true,
-        "rabbit": false,
-        "other": false
+        "hotelImg": "dogs.3.png"
     },
     {
         "name": "Downtown Pet Lounge",
@@ -125,11 +85,7 @@
         "description": "For 20 years, Downtown Pet Lounge has been providing South Seattle with more than 4,000 square feet of indoor/outdoor play space.",
         "contact_info": "206-555-1222",
         "vacancy": true,
-        "filename": "dogs.8.png",
-        "cat": true,
-        "dog": true,
-        "rabbit": false,
-        "other": false
+        "hotelImg": "dogs.8.png"
     },
     {
         "name": "Good Dog Daycare",
@@ -137,11 +93,7 @@
         "description": "The best dog daycare and boarding in Seattle. Staffed 24/7, 365 days a year.",
         "contact_info": "206-555-1244",
         "vacancy": false,
-        "filename": "dogs.9.png",
-        "cat": false,
-        "dog": true,
-        "rabbit": false,
-        "other": false
+        "hotelImg": "dogs.9.png"
     },
     {
         "name": "Metro Pets",
@@ -149,10 +101,6 @@
         "description": "Under the supervision of our highly trained and reliable handlers your dog will run, jump, play and relax while you spend your time away stress-free.",
         "contact_info": "206-555-1255",
         "vacancy": true,
-        "filename": "dogs.11.png",
-        "cat": true,
-        "dog": true,
-        "rabbit": false,
-        "other": false
+        "hotelImg": "dogs.11.png"
     }
-  ]
+]

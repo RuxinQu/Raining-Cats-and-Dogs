@@ -22,6 +22,9 @@ Pet.init(
         breed: {
             type: DataTypes.STRING,
         },
+        petImg: {
+            type: DataTypes.STRING,
+        },
         owner_id: {
             type: DataTypes.INTEGER,
             allowNull: false,

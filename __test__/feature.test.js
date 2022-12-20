@@ -11,6 +11,7 @@ describe('login with username and password', () => {
         const username = 'testuser';
         const correctPassword = 'testtest';
 
+        await browser.url('/login');
         await $('#username').setValue(username);
         await $('#password').setValue(correctPassword);
         await $('.btn').click();

@@ -5,15 +5,20 @@
 
     {{#each petArr}}
     <div class="row d-flex justify-content-center">
-        <div class="col-11 col-md-8 col-lg-5 border p-2 my-2 bg-pet-card">
-            <h3>{{this.name}}</h3>
-            <p>Type: {{this.type}}</p>
-            <p>Breed: {{this.breed}}</p>
-            {{#if this.hotel_id}}
-            {{> pet-detail}}
-            {{/if}}
+        <div
+            class="col-11 col-md-8 col-lg-5 border p-2 my-2 bg-pet-card d-flex justify-content-between align-items-center">
+            <div class="m-2">
+                <h3>{{this.name}}</h3>
+                <p>Type: {{this.type}}</p>
+                <p>Breed: {{this.breed}}</p>
+                {{#if this.hotel_id}}
+                <p>Currently In hotel: {{this.hotel.name}}</p>
+                <a class="d-inline-block mr-4" href="/hotel/{{this.hotel_id}}">hotel info</a>
+                <a class="d-inline-block" href="/api/pet/pickup/{{this.id}}">pick up my pet</a>
+                {{/if}}
+            </div>
+            <img class="pet-img" src={{this.petImg}} alt='pet-img'>
         </div>
     </div>
     {{/each}}
-
 </div>

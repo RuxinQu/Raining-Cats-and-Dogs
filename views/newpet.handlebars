@@ -1,27 +1,33 @@
-  <div class="container-fluid">
-    <div class="row d-flex flex-column justify-content-center align-items-center my-5">
-      <h3>Add a new pet</h3>
-      <form class="form my-5" action="/api/pet" method="post">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input class="form-input" type="text" id="name" name="name" required/>
-        </div>
+<div class="container-fluid">
+  <div class="row d-flex flex-column justify-content-center align-items-center my-5">
+    <h3>Add a new pet</h3>
+    <form class="form my-5" action="/api/pet" enctype="multipart/form-data" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input class="form-input" type="text" id="name" name="name" required />
+      </div>
 
-        <div class="form-group">
-          <label for="type">Type:</label>
-          <select name="type" id="type">
-            <option value="Dog">dog</option>
-            <option value="Cat">cat</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-          <label for="breed">Breed:</label>
-          <input class="form-input" type="text" id="breed" name="breed" required/>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primary" type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <select name="type" id="type">
+          <option value="Dog">dog</option>
+          <option value="Cat">cat</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="breed">Breed:</label>
+        <input class="form-input" type="text" id="breed" name="breed" required />
+      </div>
+
+      <div class="form-group">
+        <lable for="petImg">Picture(optional): </lable>
+        <input name="petImg" type="file" id="petImg">
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
   </div>
+</div>

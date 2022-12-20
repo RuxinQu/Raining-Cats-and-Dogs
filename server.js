@@ -2,10 +2,12 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./controllers');
+
 const passport = require('passport');
-const morgan = require('morgan');
 require('./utils/passport');
+
+const routes = require('./controllers');
+const morgan = require('morgan');
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);

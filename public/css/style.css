@@ -63,8 +63,14 @@ img {
   width: 50%;
 }
 
+/* ----------------pet page styling---------------- */
+.pet-img{
+  width: 30%;
+}
+
 @media (max-width: 767px) {
-  .hotel-img {
+  .hotel-img,
+  .pet-img {
     width: 90%;
   }
 }
