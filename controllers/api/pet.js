@@ -11,7 +11,7 @@ const storage = new Storage({
     projectId: process.env.GCLOUD_PROJECT,
     credentials: {
         client_email: process.env.GCLOUD_CLIENT_EMAIL,
-        private_key: process.env.GCLOUD_PRIVATE_KEY
+        private_key: process.env.GCLOUD_PRIVATE_KEY.split(String.raw`\n`).join('\n')
     }
 });
 
