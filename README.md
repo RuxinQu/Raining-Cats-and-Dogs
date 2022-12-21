@@ -20,7 +20,7 @@
 
 ## Description
 
-Raining Cats and Dogs is created to help pet owners find temporarily places for their pets to stay so that the owners can take their vacation in ease knowing that their pet will be taken care of while being away. The app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+Raining Cats and Dogs is created to help pet owners find temporarily places for their pets to stay so that the owners can take their vacation in ease knowing that their pet will be taken care of while being away. The app follows the MVC paradigm in its architectural structure, using [Express-handlebars](https://www.npmjs.com/package/express-handlebars) as the templating language, [Sequelize](https://sequelize.org/docs/v6/) as the ORM, and [Passport-Local](https://www.passportjs.org/packages/passport-local/) for authentication. [Multer](https://www.npmjs.com/package/multer) package is used to upload pictures. The images are saved in [Google-Cloud-Storage](https://console.cloud.google.com/storage) buckets.
 
 
 ## Application Deployment
@@ -36,6 +36,7 @@ This application is a live site, deployed using Heroku at https://raining-dog.he
 ## Features
 
 - Login/Logout Feature
+- Upload pictures to Google Cloud Storage
 - Save pet information
 - Choose/reserve places for pets to stay
 - Image icon changes depending where cursor is at
