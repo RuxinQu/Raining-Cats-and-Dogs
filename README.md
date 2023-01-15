@@ -2,19 +2,20 @@
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Google-Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
 ![Handlebars](https://img.shields.io/badge/Handlebars.js-f0772b?style=for-the-badge&logo=handlebarsdotjs&logoColor=black)
 ![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
-
-
-![Chai](https://img.shields.io/badge/-Chai-orange.svg?)
+![Chai](https://img.shields.io/badge/chai-A30701?style=for-the-badge&logo=chai&logoColor=white)
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
+![Passport-Local](https://img.shields.io/badge/Passport-Local-green.svg)
 ![Supertest](https://img.shields.io/badge/-Supertest-darkgreen.svg?)
 ![Bcrypt](https://img.shields.io/badge/-Bcrypt-darkblue.svg)
 ![Dotenv](https://img.shields.io/badge/-Dotenv-lightblue.svg)
-![Heroku](https://img.shields.io/badge/-Heroku-purple.svg)
-![Passport-Local](https://img.shields.io/badge/Passport-Local-green.svg)
 ![badge](https://img.shields.io/github/languages/top/tikomyster/raining-cats-and-dogs)
 ![MIT license](https://img.shields.io/badge/License-MIT-green.svg)
 

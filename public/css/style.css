@@ -1,17 +1,15 @@
 /* ----------------overall page styling---------------- */
 :root {
   --bg-hotel: #ababab;
-  --bg-img: url('/images/bg-banner.jpg');
+  --bg-img: url("/images/bg-banner.jpg");
 }
 
 html {
   font-size: 18px;
 }
 
-
 body {
-
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: fffcf2;
   color: #252422;
 }
@@ -64,7 +62,7 @@ img {
 }
 
 /* ----------------pet page styling---------------- */
-.pet-img{
+.pet-img {
   width: 30%;
 }
 
@@ -72,5 +70,8 @@ img {
   .hotel-img,
   .pet-img {
     width: 90%;
+  }
+  .bg-pet-card {
+    flex-direction: column;
   }
 }
